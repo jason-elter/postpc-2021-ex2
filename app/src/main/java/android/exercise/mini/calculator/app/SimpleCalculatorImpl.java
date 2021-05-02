@@ -6,8 +6,14 @@ import java.util.LinkedList;
 
 public class SimpleCalculatorImpl implements SimpleCalculator {
 
-    private LinkedList<String> equation = new LinkedList<>();
-    private boolean onNumber = false;
+    private LinkedList<String> equation;
+    private boolean onNumber;
+
+    public SimpleCalculatorImpl() {
+        super();
+        this.equation = new LinkedList<>();
+        this.onNumber = false;
+    }
 
     @Override
     public String output() {
